@@ -1,0 +1,89 @@
+
+/* Línea para ver los bordes de las Boxes BORRAR AL FINAL */
+
+header, .container, .mainContainer{
+    border: 1px dotted red;
+}
+
+/* Hacemos que el header este totalmente pegado arriba i le damos estilos */
+
+header{
+    
+    background-color: white;
+    margin:0px;
+}
+/* Además le añadimos el color de foondo a nuestra web */
+body{
+    background-color: hsl(0deg 0% 91.76%);
+    padding: 0;
+    margin: 0;
+}
+
+/*Alinear el titulo al centro Manteniendo el texto a la izquierda del contenedor */
+#titulo{
+    margin:0 auto;
+    width:40%;
+}
+
+
+
+.mainContainer{
+   
+}
+
+.container{
+    width:40%;
+    margin:0 auto;
+    margin-bottom:50px;
+    background-color: white;
+    overflow: hidden;
+}
+/* Añadimos un margen a la primera Card 
+para que tenga el mismo espacio que el resto con respecto al titulo*/
+.container1{
+    margin-top: 50px;
+}
+
+/* ponemos el header en display flex para poder poner el titulo i la fecha en la misma linea */
+.headerCarta{
+    display:flex;
+    padding-left: 5px;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 1px;
+}
+/* Le damos los anchos para que el titulo ocupe la mayoría del espacio disponible */
+.headerCartaTitulo{
+    width:80%;
+}
+
+.headerCartaFecha{
+    width:20%;
+}
+
+.headerCartaFecha p{
+    font-size: 1.4em;
+    color: hsl(351.43deg 4.7% 70.78%);
+}
+
+.bodyCarta{
+    overflow: hidden;
+    padding:0px;
+    
+}
+/* Hacemos que la imagen ocupe todo el ancho i 
+dejamos que se ajuste automaticamente la altura,
+ para no perder el ratio de aspecto de la imagen */
+.bodyCarta img {
+    width:100%;
+    height: auto;
+    
+}
+
+.footerCarta p {
+    font-size: 1.2em;
+    padding: 5px 70px 5px 5px;
+}
+
+.footerCarta{
+    border-top: 1px solid lightgray;
+}
